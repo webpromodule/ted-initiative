@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TEDI - Empowering Youth, Women & Girls for a Brighter Future</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="TEDI">
+	<meta name="description" content="Treasures Empowerment Development Initiative (TEDI) is a non-profit organization dedicated to breaking the cycle of poverty by equipping underprivileged youth, women, and girls with practical skills, business knowledge, and access to funding. Since 2017, we’ve trained over 10,000 people, inspired thousands to start their own businesses, and given hope to those who thought their dreams were out of reach."> 
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/css/flatpickr.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/choices/css/choices.min.css"> 
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<style>
+		.custom-card {
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+		transition: transform 0.2s ease-in-out;
+		height: 100%;
+		}
+
+		.custom-card:hover {
+		transform: translateY(-5px);
+		}
+
+		.card-icon {
+		font-size: 24px;
+		background-color: #e6fbe4;
+		color: #5cb85c;
+		padding: 12px;
+		border-radius: 50%;
+		display: inline-block;
+		margin-bottom: 15px;
+		}
+
+		.card-title {
+		font-size: 1.25rem;
+		font-weight: 600;
+		}
+
+		.card-text {
+		font-size: 0.95rem;
+		color: #555;
+		}
+
+	 .banner {
+		position: relative;
+		background-image: url('https://i.imgur.com/Eyw2JE7.jpeg'); /* Replace with your actual image path */
+		background-size: cover;
+		background-position: center;
+		border-radius: 20px;
+		height: 500px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 30px;
+		overflow: hidden;
+		}
+
+		@media (max-width: 576px) {
+		.banner {
+		  height: 250px;
+		  padding: 15px;
+		}
+		.banner-content {
+		  padding-top: 80px;
+		}
+		}
+	 .banner.fade-in {
+      animation: fadeInBg 1s ease-in-out;
+    }
+
+    @keyframes fadeInBg {
+      0% {
+        opacity: 0.4;
+        transform: scale(1.02);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+	  padding-top: 250px;
+	  width: 100% !important;
+    } 
+    .banner .subtext {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-left: 10px;
+    }
+
+    .banner .btn {
+      margin-top: 20px;
+      background-color: #fb0085;
+      color: #fdfdfdff;
+      font-weight: 600;
+      border: none;
+    }
+
+    /* Optional: background overlay for better contrast */
+    .banner::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; 
+	   background: rgba(0, 0, 0, 0.30); /* Increased darkness */
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+.typewriter { 
+      white-space: nowrap;
+      border-right: 2px solid #fff;
+      overflow: hidden;
+      width: 0;
+      animation: blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes blink-caret {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+	/* Campaign card image styling */
+	.campaign-card img {
+	  height: 250px;
+	  object-fit: cover;
+	  border-radius: 10px;
+	}
+	/* Progress bar height */
+	.progress {
+	  height: 6px;
+	  background-color: #fb0085;
+	}
+
+	  .footer {
+      background: #000;
+      color: #fff;
+      /* border-radius: 15px 15px 0 0; */
+      padding: 40px 0 20px;
+    }
+    .footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: #fff;
+    }
+    .footer .social a {
+      margin: 0 8px;
+      font-size: 20px;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #444;
+      border-radius: 50px;
+      padding: 6px 14px;
+      transition: 0.3s;
+    }
+    .footer .social a:hover {
+      background: #222;
+      border-color: #fff;
+    }
+    .footer h6 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+
+	 .fundraiser-section {
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+    .fundraiser-section h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    .side-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin: 65% 0;
+    }
+    .side-left {
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .side-right {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .btn-join {
+      background: #fb0085;
+      border: none;
+      color: #f8f3f3ff;
+      font-weight: 600;
+      padding: 12px 25px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+    .btn-join:hover {
+      background: #a3e856;
+    }
+	</style>
+</head>
+
+<body class="has-navbar-mobile">
+
+<!-- Header START -->
+<header class="navbar-light header-sticky">
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand" href="index.html">
+				<img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
+			</a>
+			<!-- Logo END -->
+
+			<!-- Responsive navbar toggler -->
+			<button class="navbar-toggler ms-auto ms-sm-0 p-0 p-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-animation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+        <span class="d-none d-sm-inline-block small">Menu</span>
+			</button>
+
+			<!-- Responsive category toggler -->
+			<button class="navbar-toggler ms-sm-auto mx-3 me-md-0 p-0 p-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCategoryCollapse" aria-controls="navbarCategoryCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- <i class="bi bi-grid-3x3-gap-fill fa-fw"></i><span class="d-none d-sm-inline-block small">Category</span> -->
+				<a class="nav-link" style="color: #fb0085;" href="index.html"><i class="bi bi-heart-fill me-2" style="color: #fb0085;"></i>Donate</a>	
+			</button>
+
+			<!-- Main navbar START -->
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll me-auto">
+	
+				<!-- Nav item home -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Join Our Program</a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Partner With Us</a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					</li> 
+				</ul>
+			</div>
+			<!-- Main navbar END -->
+
+			<!-- Nav category menu START -->
+			<div class="navbar-collapse collapse" id="navbarCategoryCollapse">
+				<ul class="navbar-nav navbar-nav-scroll nav-pills-primary-soft text-center ms-auto p-2 p-xl-0">
+					<!-- Nav item Hotel -->
+					<li class="nav-item"> <a class="nav-link text-light" style="background-color: #fb0085;" href="index.html"><i class="bi bi-heart-fill me-2 text-light"></i>Donation</a>	</li> 
+				</ul>
+			</div>
+			<!-- Nav category menu END --> 
+
+		</div>
+	</nav>
+	<!-- Logo Nav END -->
+</header>
+<!-- Header END -->
+ 
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+	
+<!-- =======================
+Main Banner START -->
+<section class="pt-1 pt-lg-1">
+	<div class="container">
+<!-- Content and Image START -->
+ <div id="banner" class="banner">
+    <div class="banner-content">
+      <div class="row align-items-center mt-n7 mt-lg-5">
+        <!-- Left: Text -->
+        <div class="col-md-8 mt-n7">
+		<h1 class="text-light display-3 display-md-2 display-lg-1 typewriter" id="typewriterText">Fund</h1>
+		<!-- <span class="subtext">Help <br/>Others</span> -->
+		</div>
+
+        <!-- Right: Button -->
+        <div class="col-md-4 text-md-end mt-n3 mt-md-0">
+          <button class="btn btn-custom">Join Our Program</button>
+        </div>
+      </div>
+	  
+    </div>
+  </div>
+
+		<!-- FRONT DESIGN -->
+		 <div class="mt-4">
+		<h5>Fund, Fast As <i>Flash</i></h5>
+		<p class="mb-3 mb-lg-4">We transform lives in rural and urban poor communities in Nigeria through free skill acquisition, vocational training, entrepreneurship, and economic empowerment.</p>
+		 </div>
+
+<div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+     <div class="card bg-light custom-card">
+        <div class="card-body">
+          <div class="card-icon">📦</div>
+		<h5 class="card-title mt-2">10,000+ youth, women & girls trained</h5>
+		<p class="card-text">
+			Since 2017, TEDI has empowered over 10,000 youth, women, and girls with practical skills, business knowledge, and access to funding. 
+		</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+    <div class="card bg-light custom-card">
+        <div class="card-body">
+          <div class="card-icon">⚡</div>
+		<h5 class="card-title mt-2">7 higher institutions impacted</h5>
+		<p class="card-text">
+			TEDI has extended its reach to 7 higher institutions, empowering students with essential skills and entrepreneurial training. Our programs foster innovation, leadership, and self-reliance among young adults.
+		</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card bg-light custom-card">
+        <div class="card-body">
+          <div class="card-icon">🌍</div>
+		<h5 class="card-title mt-2">5,000 awaiting sponsorship support</h5>
+		<p class="card-text">
+			Over 5,000 youth, women, and girls are currently waiting for sponsorship to access life-changing training and resources. Your support can help unlock their potential.
+		</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+	</div>
+</section>
+<!-- =======================
+Main Banner END -->
+
+<!-- =======================
+Best deal START -->
+<section class="pb-2 pb-lg-5 bg-light">
+	<div class="container">
+	 
+	
+   <div class="mb-4">
+    <h3 class="fw-bold">Core Focus Areas</h3>
+    <p class="text- ">"When you empower a woman, you empower a nation. When you train a youth, you secure the future." – TEDI</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card campaign-card shadow-sm border-0">
+        <img src="assets/images/1.jpg" class="card-img-top" alt="GreenFund"> 
+      </div>
+
+	   <div class="mt-2">We Care <i class="bi bi-check-circle-fill text-primary"></i></div>
+          <h6 class="mt-1 fw-normal">GreenFund: Sustain Earth Now</h6>
+		  <div class="progress mb-2">
+            <div class="progress-bar bg-dark" style="width: 80%"></div>
+          </div>
+		<div class="row">
+			<!-- Left side: Amount -->
+			<div class="col-6">
+				<small class="mb-1 fw-semibold">$50,240.210</small>
+			</div>
+			<!-- Right side: Days left -->
+			<div class="col-6 text-end">
+				<small class="text-muted">7 days left</small>
+			</div>
+		</div>
+		  
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card campaign-card shadow-sm border-0">
+        <img src="assets/images/3.jpg" class="card-img-top" alt="GreenFund"> 
+      </div>
+
+	   <div class="mt-2">We Care <i class="bi bi-check-circle-fill text-primary"></i></div>
+          <h6 class="mt-1 fw-normal">GreenFund: Sustain Earth Now</h6>
+		  <div class="progress mb-2">
+            <div class="progress-bar bg-dark" style="width: 40%"></div>
+          </div>
+		<div class="row">
+			<!-- Left side: Amount -->
+			<div class="col-6">
+				<small class="mb-1 fw-semibold">$50,240.210</small>
+			</div>
+			<!-- Right side: Days left -->
+			<div class="col-6 text-end">
+				<small class="text-muted">7 days left</small>
+			</div>
+		</div>
+		  
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card campaign-card shadow-sm border-0">
+        <img src="assets/images/4	.jpg" class="card-img-top" alt="GreenFund"> 
+      </div>
+
+	   <div class="mt-2">We Care <i class="bi bi-check-circle-fill text-primary"></i></div>
+          <h6 class="mt-1 fw-normal">GreenFund: Sustain Earth Now</h6>
+		  <div class="progress mb-2">
+            <div class="progress-bar bg-dark" style="width: 60%"></div>
+          </div>
+		<div class="row">
+			<!-- Left side: Amount -->
+			<div class="col-6">
+				<small class="mb-1 fw-semibold">$50,240.210</small>
+			</div>
+			<!-- Right side: Days left -->
+			<div class="col-6 text-end">
+				<small class="text-muted">7 days left</small>
+			</div>
+		</div>
+		  
+    </div>
+  </div>
+
+	</div>
+</section>
+<!-- =======================
+Best deal END -->
+
+
+
+
+<!-- =======================
+Best deal START -->
+<section class="pb-2 pb-lg-5 ">
+	<div class="container">
+	 
+	
+<div class="fundraiser-section" id="fundraiserSection">
+	<!-- Left Images -->
+	<div class="side-left d-none d-md-block">
+		<img src="assets/images/2.jpg" class="side-img mb-3">
+		<img src="assets/images/5.jpg" class="side-img">
+	</div>
+
+	<!-- Center Text -->
+	<p class="mb-2 fs-5">Skill Acquisition & Vocational Training</p>
+	<h1>10,924+</h1>
+	<p class="mb-4 fs-5">Entrepreneurship & Business Development</p>
+	<button class="btn btn-join">Join TED Now!</button>
+
+	<!-- Right Images -->
+	<div class="side-right d-none d-md-block">
+		<img src="assets/images/6.jpg" class="side-img mb-3">
+		<img src="assets/images/7.jpg" class="side-img">
+	</div>
+</div>
+<style>
+@media (max-width: 576px) {
+	#fundraiserSection {
+		background: url('assets/images/6.jpg') center center/cover no-repeat;
+		border-radius: 15px;
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+	}
+	#fundraiserSection h1 { 
+		color: #fff; 
+	}
+	#fundraiserSection .side-left,
+	#fundraiserSection .side-right {
+		display: none !important;
+	}
+	#fundraiserSection:before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: rgba(0,0,0,0.45);
+		z-index: 1;
+		border-radius: 15px;
+	}
+	#fundraiserSection > * {
+		position: relative;
+		z-index: 2;
+	}
+}
+</style>
+
+	</div>
+</section>
+<!-- =======================
+Best deal END -->
+ 
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<!-- Footer -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Brand Info -->
+      <div class="col-md-4">
+		<h5 class="text-success fw-bold">
+			<img src="assets/images/logo.png" alt="logo" class="img-fluid" style="max-width: 120px;">
+		</h5>
+        <p class="small">Elevating Experience & Seize<br>Control Of Your Smart Home!</p>
+        <p class="small mb-0">© FundInc. 2023<br>All Rights Reserved.</p>
+      </div>
+
+      <!-- Donate Links -->
+      <div class="col-md-2 col-4">
+        <h6>Donate</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Social</a></li>
+          <li><a href="#">Medicine</a></li>
+          <li><a href="#">Disaster</a></li>
+        </ul>
+      </div>
+
+      <!-- Help Links -->
+      <div class="col-md-3 col-4">
+        <h6>Help</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Company Links -->
+      <div class="col-md-3 col-4">
+        <h6>Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+    </div>
+ 
+  <!-- Social Media Links -->
+  <div class="text-center mt-4">
+<h5 class="text-white mb-2">Follow us on</h5>
+    <!-- Social Icons -->
+ <ul class="list-inline mb-0 mt-3">
+					<li class="list-inline-item"> <a class="btn btn-sm px-2 bg-facebook mb-0" href="#"><i class="fab fa-fw fa-facebook-f"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="#"><i class="fab fa-fw fa-instagram"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="#"><i class="fab fa-fw fa-twitter"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-linkedin mb-0" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
+				</ul>
+  </div>
+</footer>
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"></div>
+ 
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vendors -->
+<script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.js"></script>
+<script src="assets/vendor/flatpickr/js/flatpickr.min.js"></script>
+<script src="assets/vendor/choices/js/choices.min.js"></script>
+
+<!-- ThemeFunctions -->
+<script src="assets/js/functions.js"></script>
+ <script>
+    const messages = [
+      {
+        text: "10,000+ youths",
+        background: "https://i.imgur.com/Eyw2JE7.jpeg"
+      },
+	  {
+        text: "Women & girls trained",
+        background: "https://i.imgur.com/P3zEs6I.jpeg"
+      }, 
+      {
+        text: "Empowering futures",
+        background: "https://i.imgur.com/BEfg3Lo.jpeg"
+      },
+	  {
+        text: "Through education",
+        background: "https://i.imgur.com/P3zEs6I.jpeg"
+      },
+      {
+        text: "Join us Now!",
+        background: "https://i.imgur.com/m79lMNU.jpeg"
+      }
+    ];
+
+    const el = document.getElementById("typewriterText");
+  const banner = document.getElementById("banner");
+
+  let currentPhrase = 0;
+  let currentChar = 0;
+  let isDeleting = false;
+
+  function updateBackground(url) {
+    // Trigger fade-in animation
+    banner.classList.remove("fade-in");
+    void banner.offsetWidth; // Force reflow to restart animation
+    banner.style.backgroundImage = `url('${url}')`;
+    banner.classList.add("fade-in");
+  }
+
+  function type() {
+    const { text, background } = messages[currentPhrase];
+
+    if (!isDeleting && currentChar === 0) {
+      updateBackground(background);
+    }
+
+    const visibleText = text.substring(0, currentChar);
+    el.textContent = visibleText;
+    el.style.width = `${visibleText.length}ch`;
+
+    if (!isDeleting) {
+      if (currentChar < text.length) {
+        currentChar++;
+        setTimeout(type, 60);
+      } else {
+        isDeleting = true;
+        setTimeout(type, 1500); // pause after full text
+      }
+    } else {
+      if (currentChar > 0) {
+        currentChar--;
+        setTimeout(type, 40);
+      } else {
+        isDeleting = false;
+        currentPhrase = (currentPhrase + 1) % messages.length;
+        setTimeout(type, 500); // pause before next phrase
+      }
+    }
+  }
+
+  type();
+  </script>
+</body>
+</html>
